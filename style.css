@@ -1,0 +1,156 @@
+:root {
+  --primary-color: rgb(242, 105, 8);
+  --white-color: white;
+  --nav-color: rgb(0, 0, 0);
+  --li-color: rgb(249, 220, 33);
+  --tr-color: rgb(241, 117, 0);
+  --border-color: rgba(255, 255, 255, 0.6);
+  --form-color: rgba(255, 255, 255, 0.3);
+  --wrap-color: rgb(81, 74, 74);
+}
+
+#sticky {
+  float: left;
+  position: sticky;
+  position: -webkit-sticky;
+  opacity: 0.8;
+  background: var(--primary-color);
+  width: 200px;
+  height: 300px;
+  top: 70px;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.5s ease;
+}
+
+.main,
+#wrapper {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+}
+
+#wrapper {
+  height: 1000px;
+}
+
+.main {
+  height: 100px;
+}
+
+body {
+  font-family: georgia;
+  background-color: var(--wrap-color);
+  margin: 0;
+
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--nav-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: var(--white-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: var(--li-color);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--nav-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 900px;
+  margin: auto;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  color: var(--white-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--white-color);
+}
+
+tr:hover {
+  background-color: var(--tr-color);
+}
+
+form {
+  border-collapse: collapse;
+  padding: 0px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+form fieldset {
+  border: 2px solid;
+  margin-bottom: 10px;
+}
+
+form ol li {
+
+  background: var(--form-color);
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 30px;
+  list-style: none;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+}
+
+form ol ol li {
+  background: none;
+  border: none;
+  float: left;
+}
+
+form button {
+  background: var(--tr-color);
+  border: none;
+  border-radius: 20px;
+  color: var(--white-color);
+  font: 18px Georgia, "Times New Roman", Times, serif;
+  padding: 7px 25px;
+}
+
+form button:hover {
+  background-color: var(--nav-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {}

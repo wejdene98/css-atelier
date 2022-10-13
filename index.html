@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Offres</a></li>
+                <li><a href="#">Catalogues</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Partenaire</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="wrapper">
+        <div id="sticky">
+            <section>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Paramaitre</a></li>
+                    <li><a href="#">Deconnexion</a></li>
+                </ul>
+            </section>
+        </div>
+        <section>
+            <table border="5">
+                <caption>
+                    <h1 style="color:tomato;">Commande</h1>
+                </caption>
+                <thead>
+                    <th>Id</th>
+                    <th>Produit</th>
+                    <th>Quantité</th>
+                    <th>Paiement</th>
+                    <th>Livraison</th>
+                </thead>
+                <tbody>
+                    <tr class="active-row">
+                        <td>23</td>
+                        <td>Produit 1</td>
+                        <td>1</td>
+                        <td>non payé</td>
+                        <td>Aramex</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>45</td>
+                        <td>Produit 2</td>
+                        <td>2</td>
+                        <td>non payé</td>
+                        <td>Aramex</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Votre identité &#128180;</legend>
+                    <ol>
+                        <li>
+                            <label for="nom">Nom</label>
+                            <input id="nom" name="nom" type="text" placeholder="Prénom et nom">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="Ecrire votre email" minlength="8">
+                        </li>
+                        <li>
+                            <labelfor="telephone">Téléphone</labelfor=>
+                                <input id="telephone" name="telephone" type="tel" placeholder="Exemple: +216 987654321"
+                                    required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Adresse de livraison &#128233; </legend>
+                    <ol>
+                        <li>
+                            <label for="adresse">Adresse</label>
+                            <textarea id="adresse" name="adresse" rows="5" required></textarea>
+                        </li>
+                        <li>
+                            <label for="codepostal">Code postal</label>
+                            <input id="codepostal" name="codepostal" type="text" required>
+                        </li>
+                        <li>
+                            <label for="pays">Pays</label>
+                            <input id="pays" name="pays" type="text" required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Informations CB &#128179;</legend>
+                    <ol>
+                        <li>
+                            <fieldset>
+                                <legend>Type de carte bancaire</legend>
+                                <ol>
+                                    <li>
+                                        <input name="typedecarte" type="radio">
+                                        <label>Visa</label>
+                                    </li>
+                                    <li>
+                                        <input name="typedecarte" type="radio">
+                                        <label>AmEx</label>
+                                    </li>
+                                    <li>
+                                        <input name="typedecarte" type="radio">
+                                        <label>Mastercard</label>
+                                    </li>
+                                </ol>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <label for="numerodecarte">N° de carte</label>
+                            <input id="numerodecarte" name="numerodecarte" type="text" required>
+                        </li>
+                        <li>
+                            <label for="securite">Code sécurité</label>
+                            <input id="securite" name="securite" type="text" required>
+                        </li>
+                        <li>
+                            <label for="nomporteur">Nom du porteur</label>
+                            <input id="nomporteur" name="nomporteur" type="text" placeholder="">
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <button type="submit">
+                        <b>ACHETER &#9989;</b>
+                    </button>
+                    <button type="reset">
+                        <b>ANNULER &#10060;</b>
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>© 2022 copyright </footer>
+</body>
+</html>
